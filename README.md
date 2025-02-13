@@ -33,7 +33,7 @@ python main.py
 - **Clear**: Empty the cart.
 - **Products**: View cart and total price.
 
-## Example 
+## Simulation: Internet Shop Flow
 ```
 Welcome to the Internet Shop!
 Press "1" to shop or "0" to exit.
