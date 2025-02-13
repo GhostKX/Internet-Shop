@@ -1,5 +1,7 @@
 # Internet Shop
 
+
+# Dictionaries for calculating the total price
 cart = {}
 fruit_prices = {"apple": 1.5, "banana": 2.5, "lemon": 3.5}
 bread_prices = {"white": 1.8, "wheat": 1.5, "rye": 2.0}
@@ -20,6 +22,7 @@ new_product_prices.update(deodorants_prices)
 new_product_prices.update(toothpaste_prices)
 
 
+# Logic for displaying products
 def display_products():
     total_price = 0
     print('\nBasket:')
@@ -63,6 +66,7 @@ def display_products():
         print('{:<10} ${:.2f}'.format('Total price:', total_price))
 
 
+# Loop for Showing whole logic
 while True:
     print('\nWelcome to the Internet Shop!')
     user = input('\nIf you would like to shop in here please press "1"\n'
@@ -77,7 +81,10 @@ while True:
                          '"Delete" to delete the product in the cart\n'
                          '::: ').lower()
             if menu == 'products':
+
+                # Calling the function to display all available products
                 display_products()
+
             elif menu == 'add':
                 while True:
                     category = input('\nPlease type in a category of product you would like to order\n'
